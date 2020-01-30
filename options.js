@@ -12,6 +12,14 @@ $(function () {
     });
 
     $('#resetTotal').click(() => {
-        chrome.storage.sync.set({total: 0});
+        chrome.storage.sync.set({total: 0}, () => {
+            const notificationOptions = {
+                type: 'basic',
+                iconUrl: '../images/budget48.png',
+                title: 'Total reset',
+                message: 'Total reset to 0'
+            };
+            chrome.notifications.create('limitNot', notificationOptions);
+        });
     });
 });
