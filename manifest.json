@@ -1,0 +1,20 @@
+{
+  "name": "Budget manager for chrome",
+  "description": "An extension that let you manage your daily budget",
+  "version": "0.1",
+  "icons": {
+    "16": "images/budget16.png",
+    "48": "images/budget48.png",
+    "128": "images/budget128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "images/budget48.png"
+  },
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "options_page": "options.html",
+  "manifest_version": 2
+}
