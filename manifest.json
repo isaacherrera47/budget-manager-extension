@@ -11,9 +11,16 @@
     "default_popup": "popup/index.html",
     "default_icon": "images/budget48.png"
   },
+  "background": {
+    "scripts": [
+      "eventPage.js"
+    ],
+    "persistent": false
+  },
   "permissions": [
     "storage",
-    "notifications"
+    "notifications",
+    "contextMenus"
   ],
   "options_page": "options.html",
   "manifest_version": 2
